@@ -70,9 +70,10 @@ namespace Monitor
             this.cpu_header.AutoSize = true;
             this.cpu_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cpu_header.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(186)))), ((int)(((byte)(250)))));
-            this.cpu_header.Location = new System.Drawing.Point(32, -2);
+            this.cpu_header.Location = new System.Drawing.Point(24, -2);
+            this.cpu_header.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.cpu_header.Name = "cpu_header";
-            this.cpu_header.Size = new System.Drawing.Size(36, 17);
+            this.cpu_header.Size = new System.Drawing.Size(29, 13);
             this.cpu_header.TabIndex = 4;
             this.cpu_header.Text = "CPU";
             this.cpu_header.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -82,9 +83,10 @@ namespace Monitor
             this.gpu_header.AutoSize = true;
             this.gpu_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gpu_header.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.gpu_header.Location = new System.Drawing.Point(131, -2);
+            this.gpu_header.Location = new System.Drawing.Point(98, -2);
+            this.gpu_header.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gpu_header.Name = "gpu_header";
-            this.gpu_header.Size = new System.Drawing.Size(38, 17);
+            this.gpu_header.Size = new System.Drawing.Size(30, 13);
             this.gpu_header.TabIndex = 0;
             this.gpu_header.Text = "GPU";
             this.gpu_header.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -94,9 +96,10 @@ namespace Monitor
             this.ram_header.AutoSize = true;
             this.ram_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ram_header.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(135)))), ((int)(((byte)(250)))));
-            this.ram_header.Location = new System.Drawing.Point(230, -2);
+            this.ram_header.Location = new System.Drawing.Point(172, -2);
+            this.ram_header.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ram_header.Name = "ram_header";
-            this.ram_header.Size = new System.Drawing.Size(38, 17);
+            this.ram_header.Size = new System.Drawing.Size(31, 13);
             this.ram_header.TabIndex = 3;
             this.ram_header.Text = "RAM";
             this.ram_header.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -106,9 +109,10 @@ namespace Monitor
             this.disk_header.AutoSize = true;
             this.disk_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.disk_header.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.disk_header.Location = new System.Drawing.Point(332, -2);
+            this.disk_header.Location = new System.Drawing.Point(249, -2);
+            this.disk_header.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.disk_header.Name = "disk_header";
-            this.disk_header.Size = new System.Drawing.Size(35, 17);
+            this.disk_header.Size = new System.Drawing.Size(28, 13);
             this.disk_header.TabIndex = 2;
             this.disk_header.Text = "Disk";
             this.disk_header.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -118,9 +122,10 @@ namespace Monitor
             this.network_header.AutoSize = true;
             this.network_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.network_header.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(180)))), ((int)(((byte)(142)))));
-            this.network_header.Location = new System.Drawing.Point(419, -2);
+            this.network_header.Location = new System.Drawing.Point(314, -2);
+            this.network_header.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.network_header.Name = "network_header";
-            this.network_header.Size = new System.Drawing.Size(59, 17);
+            this.network_header.Size = new System.Drawing.Size(47, 13);
             this.network_header.TabIndex = 1;
             this.network_header.Text = "Network";
             this.network_header.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -132,10 +137,9 @@ namespace Monitor
             this.cpu_outline.Controls.Add(this.cpu_temp_value);
             this.cpu_outline.Controls.Add(this.cpu_usage_suffix);
             this.cpu_outline.Controls.Add(this.cpu_temp_suffix);
-            this.cpu_outline.Location = new System.Drawing.Point(6, 2);
-            this.cpu_outline.Margin = new System.Windows.Forms.Padding(4);
+            this.cpu_outline.Location = new System.Drawing.Point(4, 2);
             this.cpu_outline.Name = "cpu_outline";
-            this.cpu_outline.Size = new System.Drawing.Size(90, 55);
+            this.cpu_outline.Size = new System.Drawing.Size(68, 45);
             this.cpu_outline.TabIndex = 9;
             this.cpu_outline.Paint += new System.Windows.Forms.PaintEventHandler(this.cpu_Paint);
             // 
@@ -143,34 +147,31 @@ namespace Monitor
             // 
             this.cpu_usage_value.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cpu_usage_value.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(186)))), ((int)(((byte)(250)))));
-            this.cpu_usage_value.Location = new System.Drawing.Point(22, 11);
-            this.cpu_usage_value.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.cpu_usage_value.Location = new System.Drawing.Point(6, 9);
             this.cpu_usage_value.Name = "cpu_usage_value";
-            this.cpu_usage_value.Size = new System.Drawing.Size(25, 20);
+            this.cpu_usage_value.Size = new System.Drawing.Size(30, 16);
             this.cpu_usage_value.TabIndex = 0;
-            this.cpu_usage_value.Text = "1";
+            this.cpu_usage_value.Text = "100";
             this.cpu_usage_value.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // cpu_temp_value
             // 
             this.cpu_temp_value.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cpu_temp_value.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(186)))), ((int)(((byte)(250)))));
-            this.cpu_temp_value.Location = new System.Drawing.Point(22, 27);
-            this.cpu_temp_value.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.cpu_temp_value.Location = new System.Drawing.Point(6, 22);
             this.cpu_temp_value.Name = "cpu_temp_value";
-            this.cpu_temp_value.Size = new System.Drawing.Size(25, 20);
-            this.cpu_temp_value.TabIndex = 1;
-            this.cpu_temp_value.Text = "1";
+            this.cpu_temp_value.Size = new System.Drawing.Size(30, 16);
+            this.cpu_temp_value.TabIndex = 100;
+            this.cpu_temp_value.Text = "100";
             this.cpu_temp_value.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // cpu_usage_suffix
             // 
             this.cpu_usage_suffix.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cpu_usage_suffix.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(186)))), ((int)(((byte)(250)))));
-            this.cpu_usage_suffix.Location = new System.Drawing.Point(43, 11);
-            this.cpu_usage_suffix.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.cpu_usage_suffix.Location = new System.Drawing.Point(32, 9);
             this.cpu_usage_suffix.Name = "cpu_usage_suffix";
-            this.cpu_usage_suffix.Size = new System.Drawing.Size(40, 20);
+            this.cpu_usage_suffix.Size = new System.Drawing.Size(30, 16);
             this.cpu_usage_suffix.TabIndex = 2;
             this.cpu_usage_suffix.Text = "%";
             // 
@@ -178,10 +179,9 @@ namespace Monitor
             // 
             this.cpu_temp_suffix.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cpu_temp_suffix.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(186)))), ((int)(((byte)(250)))));
-            this.cpu_temp_suffix.Location = new System.Drawing.Point(43, 27);
-            this.cpu_temp_suffix.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.cpu_temp_suffix.Location = new System.Drawing.Point(32, 22);
             this.cpu_temp_suffix.Name = "cpu_temp_suffix";
-            this.cpu_temp_suffix.Size = new System.Drawing.Size(40, 20);
+            this.cpu_temp_suffix.Size = new System.Drawing.Size(30, 16);
             this.cpu_temp_suffix.TabIndex = 3;
             this.cpu_temp_suffix.Text = "°C";
             // 
@@ -192,10 +192,9 @@ namespace Monitor
             this.gpu_outline.Controls.Add(this.gpu_temp_value);
             this.gpu_outline.Controls.Add(this.gpu_usage_suffix);
             this.gpu_outline.Controls.Add(this.gpu_temp_suffix);
-            this.gpu_outline.Location = new System.Drawing.Point(104, 2);
-            this.gpu_outline.Margin = new System.Windows.Forms.Padding(4);
+            this.gpu_outline.Location = new System.Drawing.Point(78, 2);
             this.gpu_outline.Name = "gpu_outline";
-            this.gpu_outline.Size = new System.Drawing.Size(90, 55);
+            this.gpu_outline.Size = new System.Drawing.Size(68, 45);
             this.gpu_outline.TabIndex = 5;
             this.gpu_outline.Paint += new System.Windows.Forms.PaintEventHandler(this.gpu_Paint);
             // 
@@ -203,34 +202,31 @@ namespace Monitor
             // 
             this.gpu_usage_value.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gpu_usage_value.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.gpu_usage_value.Location = new System.Drawing.Point(22, 11);
-            this.gpu_usage_value.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.gpu_usage_value.Location = new System.Drawing.Point(6, 9);
             this.gpu_usage_value.Name = "gpu_usage_value";
-            this.gpu_usage_value.Size = new System.Drawing.Size(25, 20);
+            this.gpu_usage_value.Size = new System.Drawing.Size(30, 16);
             this.gpu_usage_value.TabIndex = 0;
-            this.gpu_usage_value.Text = "1";
+            this.gpu_usage_value.Text = "100";
             this.gpu_usage_value.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // gpu_temp_value
             // 
             this.gpu_temp_value.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gpu_temp_value.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.gpu_temp_value.Location = new System.Drawing.Point(22, 27);
-            this.gpu_temp_value.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.gpu_temp_value.Location = new System.Drawing.Point(6, 22);
             this.gpu_temp_value.Name = "gpu_temp_value";
-            this.gpu_temp_value.Size = new System.Drawing.Size(25, 20);
+            this.gpu_temp_value.Size = new System.Drawing.Size(30, 16);
             this.gpu_temp_value.TabIndex = 1;
-            this.gpu_temp_value.Text = "1";
+            this.gpu_temp_value.Text = "100";
             this.gpu_temp_value.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // gpu_usage_suffix
             // 
             this.gpu_usage_suffix.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gpu_usage_suffix.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.gpu_usage_suffix.Location = new System.Drawing.Point(43, 11);
-            this.gpu_usage_suffix.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.gpu_usage_suffix.Location = new System.Drawing.Point(32, 9);
             this.gpu_usage_suffix.Name = "gpu_usage_suffix";
-            this.gpu_usage_suffix.Size = new System.Drawing.Size(40, 20);
+            this.gpu_usage_suffix.Size = new System.Drawing.Size(30, 16);
             this.gpu_usage_suffix.TabIndex = 2;
             this.gpu_usage_suffix.Text = "%";
             // 
@@ -238,10 +234,9 @@ namespace Monitor
             // 
             this.gpu_temp_suffix.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gpu_temp_suffix.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.gpu_temp_suffix.Location = new System.Drawing.Point(43, 27);
-            this.gpu_temp_suffix.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.gpu_temp_suffix.Location = new System.Drawing.Point(32, 22);
             this.gpu_temp_suffix.Name = "gpu_temp_suffix";
-            this.gpu_temp_suffix.Size = new System.Drawing.Size(40, 20);
+            this.gpu_temp_suffix.Size = new System.Drawing.Size(30, 16);
             this.gpu_temp_suffix.TabIndex = 3;
             this.gpu_temp_suffix.Text = "°C";
             // 
@@ -250,10 +245,9 @@ namespace Monitor
             this.ram_outline.BackColor = System.Drawing.Color.Transparent;
             this.ram_outline.Controls.Add(this.ram_usage_value);
             this.ram_outline.Controls.Add(this.ram_usage_suffix);
-            this.ram_outline.Location = new System.Drawing.Point(204, 2);
-            this.ram_outline.Margin = new System.Windows.Forms.Padding(4);
+            this.ram_outline.Location = new System.Drawing.Point(153, 2);
             this.ram_outline.Name = "ram_outline";
-            this.ram_outline.Size = new System.Drawing.Size(90, 55);
+            this.ram_outline.Size = new System.Drawing.Size(68, 45);
             this.ram_outline.TabIndex = 6;
             this.ram_outline.Paint += new System.Windows.Forms.PaintEventHandler(this.ram_Paint);
             // 
@@ -261,22 +255,20 @@ namespace Monitor
             // 
             this.ram_usage_value.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ram_usage_value.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(135)))), ((int)(((byte)(250)))));
-            this.ram_usage_value.Location = new System.Drawing.Point(25, 18);
-            this.ram_usage_value.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ram_usage_value.Location = new System.Drawing.Point(8, 15);
             this.ram_usage_value.Name = "ram_usage_value";
-            this.ram_usage_value.Size = new System.Drawing.Size(25, 20);
+            this.ram_usage_value.Size = new System.Drawing.Size(30, 16);
             this.ram_usage_value.TabIndex = 0;
-            this.ram_usage_value.Text = "1";
+            this.ram_usage_value.Text = "100";
             this.ram_usage_value.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // ram_usage_suffix
             // 
             this.ram_usage_suffix.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ram_usage_suffix.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(135)))), ((int)(((byte)(250)))));
-            this.ram_usage_suffix.Location = new System.Drawing.Point(45, 18);
-            this.ram_usage_suffix.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ram_usage_suffix.Location = new System.Drawing.Point(35, 15);
             this.ram_usage_suffix.Name = "ram_usage_suffix";
-            this.ram_usage_suffix.Size = new System.Drawing.Size(40, 20);
+            this.ram_usage_suffix.Size = new System.Drawing.Size(30, 16);
             this.ram_usage_suffix.TabIndex = 1;
             this.ram_usage_suffix.Text = "%";
             // 
@@ -287,10 +279,9 @@ namespace Monitor
             this.disk_outline.Controls.Add(this.disk_read_suffix);
             this.disk_outline.Controls.Add(this.disk_write_value);
             this.disk_outline.Controls.Add(this.disk_read_value);
-            this.disk_outline.Location = new System.Drawing.Point(304, 2);
-            this.disk_outline.Margin = new System.Windows.Forms.Padding(4);
+            this.disk_outline.Location = new System.Drawing.Point(228, 2);
             this.disk_outline.Name = "disk_outline";
-            this.disk_outline.Size = new System.Drawing.Size(90, 55);
+            this.disk_outline.Size = new System.Drawing.Size(68, 45);
             this.disk_outline.TabIndex = 7;
             this.disk_outline.Paint += new System.Windows.Forms.PaintEventHandler(this.disk_Paint);
             // 
@@ -298,10 +289,9 @@ namespace Monitor
             // 
             this.disk_write_suffix.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.disk_write_suffix.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.disk_write_suffix.Location = new System.Drawing.Point(40, 27);
-            this.disk_write_suffix.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.disk_write_suffix.Location = new System.Drawing.Point(30, 22);
             this.disk_write_suffix.Name = "disk_write_suffix";
-            this.disk_write_suffix.Size = new System.Drawing.Size(45, 20);
+            this.disk_write_suffix.Size = new System.Drawing.Size(34, 16);
             this.disk_write_suffix.TabIndex = 3;
             this.disk_write_suffix.Text = "MB/s";
             // 
@@ -309,10 +299,9 @@ namespace Monitor
             // 
             this.disk_read_suffix.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.disk_read_suffix.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.disk_read_suffix.Location = new System.Drawing.Point(40, 11);
-            this.disk_read_suffix.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.disk_read_suffix.Location = new System.Drawing.Point(30, 9);
             this.disk_read_suffix.Name = "disk_read_suffix";
-            this.disk_read_suffix.Size = new System.Drawing.Size(45, 20);
+            this.disk_read_suffix.Size = new System.Drawing.Size(34, 16);
             this.disk_read_suffix.TabIndex = 2;
             this.disk_read_suffix.Text = "MB/s";
             // 
@@ -320,24 +309,22 @@ namespace Monitor
             // 
             this.disk_write_value.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.disk_write_value.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.disk_write_value.Location = new System.Drawing.Point(5, 27);
-            this.disk_write_value.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.disk_write_value.Location = new System.Drawing.Point(5, 22);
             this.disk_write_value.Name = "disk_write_value";
-            this.disk_write_value.Size = new System.Drawing.Size(40, 20);
+            this.disk_write_value.Size = new System.Drawing.Size(30, 16);
             this.disk_write_value.TabIndex = 1;
-            this.disk_write_value.Text = "1";
+            this.disk_write_value.Text = "100";
             this.disk_write_value.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // disk_read_value
             // 
             this.disk_read_value.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.disk_read_value.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.disk_read_value.Location = new System.Drawing.Point(5, 11);
-            this.disk_read_value.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.disk_read_value.Location = new System.Drawing.Point(5, 9);
             this.disk_read_value.Name = "disk_read_value";
-            this.disk_read_value.Size = new System.Drawing.Size(40, 20);
+            this.disk_read_value.Size = new System.Drawing.Size(30, 16);
             this.disk_read_value.TabIndex = 0;
-            this.disk_read_value.Text = "1";
+            this.disk_read_value.Text = "100";
             this.disk_read_value.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // network_outline
@@ -347,10 +334,9 @@ namespace Monitor
             this.network_outline.Controls.Add(this.network_download_value);
             this.network_outline.Controls.Add(this.network_upload_suffix);
             this.network_outline.Controls.Add(this.network_download_suffix);
-            this.network_outline.Location = new System.Drawing.Point(404, 2);
-            this.network_outline.Margin = new System.Windows.Forms.Padding(4);
+            this.network_outline.Location = new System.Drawing.Point(303, 2);
             this.network_outline.Name = "network_outline";
-            this.network_outline.Size = new System.Drawing.Size(90, 55);
+            this.network_outline.Size = new System.Drawing.Size(68, 45);
             this.network_outline.TabIndex = 8;
             this.network_outline.Paint += new System.Windows.Forms.PaintEventHandler(this.network_Paint);
             // 
@@ -358,34 +344,31 @@ namespace Monitor
             // 
             this.network_upload_value.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.network_upload_value.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(180)))), ((int)(((byte)(142)))));
-            this.network_upload_value.Location = new System.Drawing.Point(5, 11);
-            this.network_upload_value.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.network_upload_value.Location = new System.Drawing.Point(4, 9);
             this.network_upload_value.Name = "network_upload_value";
-            this.network_upload_value.Size = new System.Drawing.Size(40, 20);
+            this.network_upload_value.Size = new System.Drawing.Size(30, 16);
             this.network_upload_value.TabIndex = 0;
-            this.network_upload_value.Text = "1";
+            this.network_upload_value.Text = "100";
             this.network_upload_value.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // network_download_value
             // 
             this.network_download_value.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.network_download_value.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(180)))), ((int)(((byte)(142)))));
-            this.network_download_value.Location = new System.Drawing.Point(5, 27);
-            this.network_download_value.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.network_download_value.Location = new System.Drawing.Point(4, 22);
             this.network_download_value.Name = "network_download_value";
-            this.network_download_value.Size = new System.Drawing.Size(40, 20);
+            this.network_download_value.Size = new System.Drawing.Size(30, 16);
             this.network_download_value.TabIndex = 1;
-            this.network_download_value.Text = "1";
+            this.network_download_value.Text = "100";
             this.network_download_value.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // network_upload_suffix
             // 
             this.network_upload_suffix.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.network_upload_suffix.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(180)))), ((int)(((byte)(142)))));
-            this.network_upload_suffix.Location = new System.Drawing.Point(40, 11);
-            this.network_upload_suffix.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.network_upload_suffix.Location = new System.Drawing.Point(30, 9);
             this.network_upload_suffix.Name = "network_upload_suffix";
-            this.network_upload_suffix.Size = new System.Drawing.Size(45, 20);
+            this.network_upload_suffix.Size = new System.Drawing.Size(34, 16);
             this.network_upload_suffix.TabIndex = 2;
             this.network_upload_suffix.Text = "MB/s";
             // 
@@ -393,20 +376,19 @@ namespace Monitor
             // 
             this.network_download_suffix.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.network_download_suffix.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(180)))), ((int)(((byte)(142)))));
-            this.network_download_suffix.Location = new System.Drawing.Point(40, 27);
-            this.network_download_suffix.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.network_download_suffix.Location = new System.Drawing.Point(30, 22);
             this.network_download_suffix.Name = "network_download_suffix";
-            this.network_download_suffix.Size = new System.Drawing.Size(45, 20);
+            this.network_download_suffix.Size = new System.Drawing.Size(34, 16);
             this.network_download_suffix.TabIndex = 3;
             this.network_download_suffix.Text = "MB/s";
             // 
             // Monitor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(500, 60);
+            this.ClientSize = new System.Drawing.Size(375, 49);
             this.Controls.Add(this.gpu_header);
             this.Controls.Add(this.network_header);
             this.Controls.Add(this.disk_header);
@@ -419,7 +401,8 @@ namespace Monitor
             this.Controls.Add(this.cpu_outline);
             this.ForeColor = System.Drawing.Color.DimGray;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Monitor";

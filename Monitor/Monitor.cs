@@ -56,6 +56,38 @@ namespace Monitor
             computer.Close();
         }
 
+        //Hide for 10 min on home key press
+        protected override void OnKeyUp(KeyEventArgs e)
+        {
+            base.OnKeyUp(e);
+
+            if (e.KeyCode == Keys.Home)
+            {
+
+                //Fade out
+                for (double i = 0.70; i > 0.0; i -= 0.05)
+                {
+                    this.Opacity = i;
+                    Thread.Sleep(10);
+                }
+
+                //Turn off for 10 minutes
+                this.Visible = false;
+                Thread.Sleep(600000);
+
+                //Turn on
+                this.Visible = true;
+                this.Refresh();
+
+                //Fade in
+                for (double i = 0.0; i < 0.70; i += 0.05)
+                {
+                    this.Opacity = i;
+                    Thread.Sleep(10);
+                }
+            }
+        }
+
         //Hide the app for 3 seconds on hover to access content below
         protected override void OnMouseEnter(EventArgs e)
         {
@@ -70,7 +102,7 @@ namespace Monitor
 
             //Turn off for 3 second
             this.Visible = false;
-            Thread.Sleep(3000);
+            Thread.Sleep(10000);
             this.Visible = true;
             this.Refresh();
 
